@@ -59,4 +59,10 @@ public class Card {
         if (!mod) System.out.print("-");
         System.out.print(value);
     }
+
+    /** @return the string representation of the card's value (value and modifier)*/
+    public String getValueStr() {
+        if (!mod) return "-" + value;
+        return Integer.toString(value);
+    }
 }
